@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/qlChuTro"
+        android:title="Xem danh sách Email" />
+    <item
+        android:id="@+id/qlTaoTK"
+        android:title="Tạo tài khoản chủ trọ"/>
+    <item
+        android:id="@+id/qlDanhSachNhaTro"
+        android:title="Quản lý danh sách nhà trọ"/>
+    <item
+        android:id="@+id/Dangxuat"
+        android:title="Đăng xuất"/>
+</menu>

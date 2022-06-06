@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InsertDta_Activity">
+
+
+    <TextView
+        android:id="@+id/TextViewDangTin"
+        android:layout_width="337dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="34dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginEnd="39dp"
+        android:text="SỬA THÔNG TIN PHÒNG TRỌ"
+        android:textAlignment="center"
+        android:textColor="#0E0101"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/EditTenNhaTro"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextViewDangTin"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginTop="20dp"
+        android:hint="Tên nhà trọ"
+        android:inputType="text" />
+    <EditText
+        android:id="@+id/EditGia"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EditTenNhaTro"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="31dp"
+        android:hint="Giá tiền trọ"
+        android:inputType="text"/>
+    <EditText
+        android:id="@+id/EditViTri"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EditGia"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="31dp"
+        android:hint="Vị trí nhà trọ"
+        android:inputType="text"/>
+    <EditText
+        android:id="@+id/EditSDT"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EditViTri"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="31dp"
+        android:hint="Số điện thoại nhà trọ"
+        android:inputType="number"/>
+    <EditText
+        android:id="@+id/EditGioiThieu"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EditSDT"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="31dp"
+        android:hint="Giới thiệu nhà trọ"
+        android:inputType="text"/>
+    <EditText
+        android:id="@+id/EditDienTich"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EditGioiThieu"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="31dp"
+        android:hint="Diện tích nhà trọ"
+        android:inputType="text"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/ic_launcher_background"
+        android:scaleType="centerCrop"
+        android:id="@+id/imageViewEdit"
+        android:layout_below="@+id/EditDienTich" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewProgress"
+        android:layout_below="@id/imageViewEdit"
+        android:text="0.0 %"
+        android:gravity="center"
+        android:textSize="25dp"
+        />
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_below="@id/textViewProgress"
+        android:layout_marginRight="40dp"
+        android:id="@+id/progressBar"
+        android:layout_marginLeft="40dp"
+        />
+    <Button
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:background="#FFA000"
+        android:id="@+id/button_Upload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/progressBar"
+        android:text="Upload"
+        android:padding="10dp"
+        android:layout_marginTop="5dp"/>
+
+
+</RelativeLayout>

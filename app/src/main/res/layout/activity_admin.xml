@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDF1F1"
+    android:scaleType="centerCrop"
+    tools:context=".Admin">
+
+    <ImageView
+        android:id="@+id/imageEmail"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/anhemail" />
+
+    <TextView
+        android:id="@+id/textEmail"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageEmail"
+        android:layout_marginStart="50dp"
+        android:text="Danh sách Email"
+        android:textAlignment="center"
+        android:textColor="#0097A7"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageDangKy"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="50dp"
+        android:layout_toEndOf="@+id/imageEmail"
+        android:background="@drawable/dangky" />
+
+    <TextView
+        android:id="@+id/textdangky"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageDangKy"
+        android:layout_marginStart="61dp"
+        android:layout_marginEnd="50dp"
+        android:layout_toEndOf="@+id/textEmail"
+        android:text="Đăng kí chủ trọ"
+        android:textAlignment="center"
+        android:textColor="#0097A7"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageQuanLyDanhSach"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_below="@+id/textEmail"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="50dp"
+        android:background="@drawable/quanlydanhsachnhatro" />
+
+    <TextView
+        android:id="@+id/textQuanlyDanhSachNT"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageQuanLyDanhSach"
+        android:layout_marginStart="50dp"
+        android:text="Danh sách nhà trọ"
+        android:textAlignment="center"
+        android:textColor="#0097A7"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <ImageView
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:id="@+id/imageDangXuat"
+        android:layout_toEndOf="@+id/imageQuanLyDanhSach"
+        android:background="@drawable/dangxuat"
+        android:layout_below="@+id/textdangky"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="61dp"/>
+    <TextView
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textDangXuat"
+        android:text="Đăng xuất"
+        android:textAlignment="center"
+        android:textColor="#0097A7"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/imageDangXuat"
+        android:layout_toEndOf="@+id/textQuanlyDanhSachNT"
+        android:layout_marginStart="61dp"
+        android:layout_marginEnd="50dp"/>
+</RelativeLayout>

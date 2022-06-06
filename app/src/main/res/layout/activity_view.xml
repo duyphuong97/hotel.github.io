@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/cardView_PhongTro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="8dp">
+
+            <RelativeLayout
+                android:id="@+id/Home_Phong"
+                android:layout_width="match_parent"
+                android:layout_height="250dp">
+
+                <ImageView
+                    android:id="@+id/ImageNen"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:scaleType="centerCrop" />
+
+                <RelativeLayout
+                    android:id="@+id/Layout_ThongTin"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#D9000000">
+
+                    <TextView
+                        android:id="@+id/tenNhaTro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:text="Nhà trọ Cây Khế"
+                        android:textColor="#fff"
+                        android:textSize="25dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/TenGia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:paddingStart="10dp"
+                        android:paddingBottom="5dp"
+                        android:text="Giá:"
+                        android:textColor="#fff"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/GiaPhongTro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toRightOf="@+id/TenGia"
+                        android:paddingStart="10dp"
+                        android:paddingBottom="5dp"
+                        android:text="600k"
+                        android:textColor="#fff"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/TrangThaiPhongTro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginRight="10dp"
+                        android:paddingStart="10dp"
+                        android:paddingBottom="5dp"
+                        android:text="CÒN TRỐNG"
+                        android:textColor="#9CFD46"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:id="@+id/Layout_ViTri"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cardView_PhongTro"
+            android:layout_marginTop="30dp">
+
+            <ImageView
+                android:id="@+id/Imgeview_ViTri"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_location_on_black_24dp" />
+
+            <TextView
+                android:id="@+id/Text_ViTri"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/Imgeview_ViTri"
+                android:text="Đường 91B, Phường An Cư, Quận Ninh Kiều, Thành Phố Cần Thơ"
+                android:textColor="#C80707"
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Layout_Phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Layout_ViTri">
+
+            <ImageView
+                android:id="@+id/Imgeview_Phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_phone_black_24dp" />
+
+            <TextView
+                android:id="@+id/Text_Phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/Imgeview_Phone"
+                android:text="4546454466"
+                android:textColor="#0288D1"
+                android:textSize="20dp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Layout_GioiTheu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Layout_Phone">
+
+            <ImageView
+                android:id="@+id/Imgeview_GioiThieu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_short_text_black_24dp" />
+
+            <TextView
+                android:id="@+id/Text_GioiThieu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/Imgeview_GioiThieu"
+                android:text="hjdkfshfkjdshfdskfhsdfsdf"
+                android:textColor="#65933D"
+                android:textSize="20dp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Layout_DienTich"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Layout_GioiTheu">
+
+            <ImageView
+                android:id="@+id/Imgeview_DienTich"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_account_balance_black_24dp" />
+
+            <TextView
+                android:id="@+id/Text_DienTich"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/Imgeview_DienTich"
+                android:text="320m2"
+                android:textColor="#FBBB1A"
+                android:textSize="20dp" />
+
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/butnDatPhong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Layout_DienTich"
+            android:layout_marginLeft="210dp"
+            android:background="#1976D2"
+            android:text="Đặt Phòng" />
+
+        <Button
+            android:id="@+id/butnLienHe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Layout_DienTich"
+            android:layout_marginLeft="310dp"
+            android:background="#B80EB0"
+            android:text="Liên Hệ" />
+
+        <Button
+            android:id="@+id/buttonSua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/butnLienHe"
+            android:layout_marginLeft="210dp"
+            android:background="#C53A5A"
+            android:text="Sửa" />
+
+        <Button
+            android:id="@+id/buttonXoa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/butnLienHe"
+            android:layout_marginLeft="310dp"
+            android:background="#E64A19"
+            android:text="Xóa" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/R1"
+        android:layout_below="@+id/buttonXoa">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/carView_ThongKe1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/texView_ThongKe_TenKH1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nguyen Van Thinh" />
+
+                <TextView
+                    android:id="@+id/texView_ThongKe_SDTKH1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/texView_ThongKe_TenKH1"
+                    android:text="0826578965" />
+
+                <TextView
+                    android:id="@+id/texView_ThongKe_MSSV_CMNN_KH1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/texView_ThongKe_SDTKH1"
+                    android:text="B1609943" />
+
+                <TextView
+                    android:id="@+id/texView_ThongKe_QueQuanKH1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/texView_ThongKe_MSSV_CMNN_KH1"
+                    android:text="Ap Long Hung, xa Long Thuan, huyen Hong Ngu, tinh Dong Thap" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@id/texView_ThongKe_QueQuanKH1"
+                    android:background="#C5C3C3"
+                    android:padding="10dp" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/carView_ThongKe2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/carView_ThongKe1"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/texView_ThongKe_TenKH2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nguyen Van Thinh" />
+
+                <TextView
+                    android:id="@+id/texView_ThongKe_SDTKH2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/texView_ThongKe_TenKH2"
+                    android:text="0826578965" />
+
+                <TextView
+                    android:id="@+id/texView_ThongKe_MSSV_CMNN_KH2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/texView_ThongKe_SDTKH2"
+                    android:text="B1609943" />
+
+                <TextView
+                    android:id="@+id/texView_ThongKe_QueQuanKH2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/texView_ThongKe_MSSV_CMNN_KH2"
+                    android:text="Ap Long Hung, xa Long Thuan, huyen Hong Ngu, tinh Dong Thap" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@id/texView_ThongKe_QueQuanKH2"
+                    android:background="#C5C3C3"
+                    android:padding="10dp" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/carView_ThongKe3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/carView_ThongKe2"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/texView_ThongKe_TenKH3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nguyen Van Thinh" />
+
+                <TextView
+                    android:id="@+id/texView_ThongKe_SDTKH3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/texView_ThongKe_TenKH3"
+                    android:text="0826578965" />
+
+                <TextView
+                    android:id="@+id/texView_ThongKe_MSSV_CMNN_KH3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/texView_ThongKe_SDTKH3"
+                    android:text="B1609943" />
+
+                <TextView
+                    android:id="@+id/texView_ThongKe_QueQuanKH3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/texView_ThongKe_MSSV_CMNN_KH3"
+                    android:text="Ap Long Hung, xa Long Thuan, huyen Hong Ngu, tinh Dong Thap" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@id/texView_ThongKe_QueQuanKH3"
+                    android:background="#C5C3C3"
+                    android:padding="10dp" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/carView_ThongKe4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/carView_ThongKe3"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/texView_ThongKe_TenKH4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nguyen Van Thinh" />
+
+                <TextView
+                    android:id="@+id/texView_ThongKe_SDTKH4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/texView_ThongKe_TenKH4"
+                    android:text="0826578965" />
+
+                <TextView
+                    android:id="@+id/texView_ThongKe_MSSV_CMNN_KH4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/texView_ThongKe_SDTKH4"
+                    android:text="B1609943" />
+
+                <TextView
+                    android:id="@+id/texView_ThongKe_QueQuanKH4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/texView_ThongKe_MSSV_CMNN_KH4"
+                    android:text="Ap Long Hung, xa Long Thuan, huyen Hong Ngu, tinh Dong Thap" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+        <EditText
+            android:id="@+id/edit_TenKh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/R1"
+            android:hint="Nhập họ tên"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/edit_SDTKh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_TenKh"
+            android:hint="Nhập số điện thoại"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/edit_MSSV_CMNNKh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_SDTKh"
+            android:hint="Nhập MSSV/ số CMNN"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/edit_QuequanKh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_MSSV_CMNNKh"
+            android:hint="Nhập quê quán"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnClickThemKH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_QuequanKh"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="Thêm" />
+
+        <Button
+            android:id="@+id/btnClickXacNhanKH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_QuequanKh"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="Xác nhận"
+            android:visibility="gone" />
+    </RelativeLayout>
+</ScrollView>

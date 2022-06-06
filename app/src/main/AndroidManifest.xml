@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.phuongthao.app_nhatro">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/anhtro"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ThongKe_NhaTro">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".QuanLy_ChuTro" />
+        </activity>
+        <activity android:name=".Search_Near" />
+        <activity android:name=".MyGoogleMap" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/map_key" />
+
+        <activity android:name=".HienThiDanhSachNhaTro" />
+        <activity android:name=".HienThiBangDuyet" />
+        <activity android:name=".HienThiUserChuTro" />
+        <activity android:name=".DangKi_ChuTro" />
+        <activity android:name=".ViewDatPhong" />
+        <activity android:name=".MyViewDatPhong" />
+        <activity android:name=".QLy_DatPhong" />
+        <activity android:name=".Admin" />
+        <activity android:name=".Edit_Data_PhongTro" />
+        <activity android:name=".QuanLy_ChuTro" />
+        <activity android:name=".SoPhongTroActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".MyListPhong" />
+        <activity android:name=".Insert_TenPhong_Activity" />
+        <activity android:name=".ViewActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".InsertData_DatPhong" />
+        <activity android:name=".InsertDta_Activity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity android:name=".Account" />
+        <activity
+            android:name=".Search"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity android:name=".Home" />
+        <activity android:name=".Login_Logout.Login_Logout" />
+        <activity
+            android:name=".MainActivity"
+            android:windowSoftInputMode="adjustNothing">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

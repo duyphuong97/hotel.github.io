@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cardView_KhachHang"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        app:cardElevation="8dp">
+
+        <RelativeLayout
+            android:id="@+id/Home_KH"
+            android:layout_width="match_parent"
+            android:layout_height="250dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:scaleType="centerCrop"
+                android:id="@+id/ImageCMNN"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:id="@+id/Layout_ThongTin"
+                android:layout_alignParentBottom="true"
+                android:background="#D9000000">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tenKHang"
+                    android:text="Nguyễn Văn A"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/SDT_KH"
+                    android:text="SDT:"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_alignParentBottom="true"
+                    android:paddingStart="10dp"
+                    android:paddingBottom="5dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Hien_SDT_KH"
+                    android:text="0837991223"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_alignParentBottom="true"
+                    android:paddingStart="10dp"
+                    android:paddingBottom="5dp"
+                    android:layout_toRightOf="@+id/SDT_KH"
+                    />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardView_KhachHang"
+        android:layout_marginTop="10dp"
+        android:id="@+id/Layout_TenPhong">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/TenPhongTro"
+            android:text="Tên Phòng Trọ:"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#06B8A4"/>
+        <TextView
+            android:id="@+id/Text_Hien_TenPhong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="#06B8A4"
+            android:layout_marginLeft="10dp"
+            android:text="Nguyễn Hưng Phòng 10"
+            android:layout_toRightOf="@id/TenPhongTro"/>
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Layout_TenPhong"
+        android:id="@+id/Layout_CMNN">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/SO_CMNN"
+            android:text="Số CMNN/MSSV:"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#C80707"/>
+        <TextView
+            android:id="@+id/Text_Hien_CMNN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="#C80707"
+            android:layout_marginLeft="10dp"
+            android:text="057985479"
+            android:layout_toRightOf="@id/SO_CMNN"/>
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Layout_CMNN"
+        android:id="@+id/Layout_NamSinh">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/NamSinh_KH"
+            android:text="Năm Sinh:"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#0288D1"/>
+        <TextView
+            android:id="@+id/Text__Hien_NSinh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="08/09/1997"
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#0288D1"
+            android:layout_toRightOf="@id/NamSinh_KH"/>
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Layout_NamSinh"
+        android:id="@+id/Layout_QueQuan">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Quequan_KH"
+            android:text="Quê quán:"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#FBBB1A"/>
+        <TextView
+            android:id="@+id/Text_Hien_Quequan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đồng Tháp"
+            android:textSize="20dp"
+            android:textColor="#FBBB1A"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/Quequan_KH"/>
+
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/butKhongDuyet"
+        android:layout_below="@+id/Layout_QueQuan"
+        android:layout_marginLeft="210dp"
+        android:text="Không Duyệt"
+        android:background="#AFB42B"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/butDuyet"
+        android:layout_below="@+id/Layout_QueQuan"
+        android:layout_marginLeft="310dp"
+        android:text="Duyệt"
+        android:background="#FFA000"/>
+
+
+</RelativeLayout>

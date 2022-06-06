@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InsertDta_Activity">
+
+    <TextView
+        android:id="@+id/TextView_DangTin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="140dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginEnd="139dp"
+        android:text="Đăng tin"
+        android:textAlignment="center"
+        android:textColor="#0E0101"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/Edit_TenNhaTro"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextView_DangTin"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="57dp"
+        android:layout_marginEnd="31dp"
+        android:hint="Tên nhà trọ"
+        android:inputType="text" />
+    <EditText
+        android:id="@+id/Edit_Gia"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Edit_TenNhaTro"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="57dp"
+        android:layout_marginEnd="31dp"
+        android:hint="Giá tiền trọ"
+        android:inputType="text"/>
+    <EditText
+        android:id="@+id/Edit_ViTri"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Edit_Gia"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="57dp"
+        android:layout_marginEnd="31dp"
+        android:hint="Vị trí nhà trọ"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/Edit_HinhAnh"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Edit_ViTri"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="57dp"
+        android:clickable="true"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:hint="Hình ảnh nhà trọ"
+        android:inputType="text" />
+    <Button
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:background="#90FFA000"
+        android:id="@+id/button_Brower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Edit_ViTri"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="57dp"
+        android:layout_toRightOf="@+id/Edit_HinhAnh"
+        android:layout_toEndOf="@+id/Edit_HinhAnh"
+        android:text="Browse"
+        android:padding="10dp"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_marginTop="50dp"
+        app:itemTextColor="@drawable/selector"
+        app:itemIconTint="@drawable/selector"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bttom_navigation_insertData"
+        app:menu="@menu/menu_insert"
+        />
+
+
+
+</RelativeLayout>

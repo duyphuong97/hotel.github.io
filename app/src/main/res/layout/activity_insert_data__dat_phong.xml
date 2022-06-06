@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InsertData_DatPhong">
+
+
+    <TextView
+        android:id="@+id/TextView_DatPhong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="71dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginEnd="64dp"
+        android:text="Thông tin đặt phòng"
+        android:textAlignment="center"
+        android:textColor="#0E0101"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/Edit_TenNguoiO"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextView_DatPhong"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="31dp"
+        android:hint="Họ tên người đặt phòng"
+        android:inputType="text" />
+    <EditText
+        android:id="@+id/Edit_CMNN"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Edit_TenNguoiO"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="31dp"
+        android:hint="Số chứng minh nhân dân/ MSSV"
+        android:inputType="text"/>
+    <EditText
+        android:id="@+id/Edit_SDT"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Edit_CMNN"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="31dp"
+        android:hint="Số điện thoại"
+        android:inputType="number"/>
+    <EditText
+        android:id="@+id/Edit_NamSinh"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Edit_SDT"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="31dp"
+        android:hint="Ngày / Tháng / Năm sinh"
+        android:inputType="date"/>
+
+    <EditText
+        android:id="@+id/Edit_QueQuan"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Edit_NamSinh"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:hint="Quê quán"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/TextView_AnhCMNN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Edit_QueQuan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="139dp"
+        android:text="Chụp ảnh CMNN / MSSV chính chủ"
+        android:textAlignment="center"
+        android:textColor="#0E0101"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/ic_launcher_background"
+        android:scaleType="centerCrop"
+        android:id="@+id/imageViewAdd_KH"
+        android:layout_below="@+id/TextView_AnhCMNN" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewProgressDatPhong"
+        android:layout_below="@id/imageViewAdd_KH"
+        android:text="0.0 %"
+        android:gravity="center"
+        android:textSize="25dp"
+        />
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_below="@id/textViewProgressDatPhong"
+        android:layout_marginRight="40dp"
+        android:id="@+id/progressBarDatPhong"
+        android:layout_marginLeft="40dp"
+        />
+
+    <Button
+        android:id="@+id/Button_DatPhong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progressBarDatPhong"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="Đặt Phòng"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:background="#FFA000"/>
+
+</RelativeLayout>

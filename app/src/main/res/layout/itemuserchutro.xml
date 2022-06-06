@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="#C9F8CB"
+        android:id="@+id/recyclerUser">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#0E1E88"
+            android:layout_marginTop="10dp"
+            android:text="DuyPhuong@gmail.com"
+            android:textSize="30dp"
+            android:textStyle="italic"
+            android:id="@+id/textViewEmail"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#A36806"
+            android:text="DuyPhuong"
+            android:textSize="30dp"
+            android:layout_marginBottom="10dp"
+            android:textStyle="italic"
+            android:id="@+id/textViewTenChuTro"
+            android:layout_below="@+id/textViewEmail"/>
+    </RelativeLayout>
+
+</RelativeLayout>

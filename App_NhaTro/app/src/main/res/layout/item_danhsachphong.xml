@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <androidx.cardview.widget.CardView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cardView_PhongTro"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp">
+
+        <RelativeLayout
+            android:id="@+id/Home_Phong"
+            android:background="@drawable/anhtro1"
+            android:layout_width="match_parent"
+            android:layout_height="250dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/Layout_ThongTin"
+                android:layout_alignParentBottom="true"
+                android:background="#D9000000">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tenNhaTro"
+                    android:text="Nhà trọ Cây Khế"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:textSize="25dp"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/GiaPhongTro"
+                    android:text="Gia: 600k"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:layout_alignParentBottom="true"
+                    android:paddingStart="10dp"
+                    android:paddingBottom="10dp"
+                    />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardView_PhongTro"
+        android:id="@+id/Layout_ViTri">
+        <ImageView
+            android:id="@+id/Imgeview_ViTri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_location_on_black_24dp"
+            />
+        <TextView
+            android:id="@+id/Text_ViTri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đường 91B, Phường An Cư, Quận Ninh Kiều, Thành Phố Cần Thơ"
+            android:layout_toRightOf="@id/Imgeview_ViTri"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

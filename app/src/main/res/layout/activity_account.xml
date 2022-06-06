@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Account">
+
+
+    <TextView
+        android:id="@+id/textViewDangNhap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="77dp"
+        android:layout_marginEnd="77dp"
+        android:text="ĐĂNG NHẬP"
+        android:textAlignment="center"
+        android:textColor="#0E4D8B"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imageViewDangNhap"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_below="@+id/textViewDangNhap"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="165dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="165dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDangNhap"
+        app:srcCompat="@drawable/logonhatro" />
+
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageViewDangNhap"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="55dp"
+        android:background="@drawable/edit"
+        android:ems="10"
+        android:textColorHint="#1976D2"
+        android:textColor="#1976D2"
+        android:drawablePadding="10dp"
+        android:padding="20dp"
+        android:hint="Nhập Email"
+        android:inputType="textEmailAddress"
+        android:drawableLeft="@drawable/ic_person_black_24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewDangNhap" />
+
+    <EditText
+        android:id="@+id/editTextMatKhau"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextEmail"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="55dp"
+        android:ems="10"
+        android:textColorHint="#1976D2"
+        android:textColor="#1976D2"
+        android:drawablePadding="10dp"
+        android:background="@drawable/edit"
+        android:padding="20dp"
+        android:hint="Nhập Paasword"
+        android:drawableLeft="@drawable/ic_lock_black_24dp"
+        android:inputType="textPassword"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEmail" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_below="@+id/editTextMatKhau"
+        android:layout_marginLeft="20dp"
+        android:text="Remember me"
+        android:textColor="#1976D2" />
+
+    <TextView
+        android:id="@+id/texviewFogetPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_below="@+id/editTextMatKhau"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="122dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_toEndOf="@+id/checkBox"
+        android:text="Forgot password?"
+        android:textColor="#1976D2" />
+
+    <Button
+        android:id="@+id/buttonDangNhap"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/editTextMatKhau"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="80dp"
+        android:background="#1976D2"
+        android:text="Đăng nhập"
+        android:textColor="#F9FAFB"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/editTextMatKhau" />
+
+
+    <TextView
+        android:id="@+id/textViewDangKy"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:layout_below="@+id/buttonDangNhap"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="130dp"
+        android:text="To Register New Account"
+        android:textColor="#1976D2" />
+
+    <Button
+        android:id="@+id/btnClickHere"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_below="@+id/buttonDangNhap"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="130dp"
+        android:text="Click Here"
+        android:textColor="#1976D2"
+        android:textSize="10sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        app:itemTextColor="@drawable/selector"
+        app:itemIconTint="@drawable/selector"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bttom_navigation"
+        app:menu="@menu/menu"
+        />
+
+
+
+
+</RelativeLayout>

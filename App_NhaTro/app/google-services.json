@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "133230280576",
+    "firebase_url": "https://duyphuong-2da9a.firebaseio.com",
+    "project_id": "duyphuong-2da9a",
+    "storage_bucket": "duyphuong-2da9a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:133230280576:android:d04c288126f42549700b65",
+        "android_client_info": {
+          "package_name": "com.phuongthao.app_nhatro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "133230280576-0gdg094i8j71mr4tegvbd7caf5487rb8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCbx44GvvxBP3muYKHtRQM46VbdkVIX1E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "133230280576-0gdg094i8j71mr4tegvbd7caf5487rb8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:133230280576:android:5a78328af62372a0700b65",
+        "android_client_info": {
+          "package_name": "com.phuongthao.login_logout_firebase11"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "133230280576-0gdg094i8j71mr4tegvbd7caf5487rb8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCbx44GvvxBP3muYKHtRQM46VbdkVIX1E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "133230280576-0gdg094i8j71mr4tegvbd7caf5487rb8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:133230280576:android:98d1fb2fbf2ab40c700b65",
+        "android_client_info": {
+          "package_name": "com.phuongthao.resort_ha"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "133230280576-0gdg094i8j71mr4tegvbd7caf5487rb8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCbx44GvvxBP3muYKHtRQM46VbdkVIX1E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "133230280576-0gdg094i8j71mr4tegvbd7caf5487rb8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
